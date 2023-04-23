@@ -1,0 +1,32 @@
+.PEditar{
+    background-color: rgba(0, 0, 0, 0.507);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.active{
+    display: flex;
+}
+
+.PEditar .formulario{
+    width: 30%;
+    min-width: 300px;
+}
+
+#regresar{
+    background-color: blueviolet;
+    border: blueviolet;
+    align-self: flex-start;
+    min-width: 10%;
+}
+
+#regresar:hover{
+    background-color: rgba(137, 43, 226, 0.767);
+}

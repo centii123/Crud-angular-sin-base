@@ -1,0 +1,28 @@
+
+<nav>
+    <h3>CRUD CON JAVASCRIPT Y LOCALSTORAGE</h3>
+</nav>
+<main>
+    <form class="formulario" (submit)="agregarAnimal()">
+        <label for="animal"><h3>Digite un animal</h3></label>
+        <input type="text" id="animal" [(ngModel)]="animal" name="animal">
+        <button type="submit"><h4>Agregar</h4></button>
+    </form>
+    
+    <div class="animales" >
+        <h2 >ANIMALES</h2>
+        <ol class="infinito" id="animales">
+            <span *ngFor="let animal of ListAnimales">
+                <div class="opcionAnimal">
+                    <h4><li>{{animal.nombre}}</li></h4>
+                    <div>
+                        <button class="borrar" (click)="borrar(animal.id)">Borrar</button>
+                        <button class="editar" (click)="editar(animal.id)">Editar</button>
+                    </div>
+                </div>
+            </span>
+        </ol>
+    </div>
+    
+    
+</main>
